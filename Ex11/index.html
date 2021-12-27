@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating dynamics images</title>
+</head>
+<body>
+    <h1>Creating dynamic images</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi ipsam, omnis minus doloribus sit quia repudiandae libero, aliquid reprehenderit consequuntur recusandae facilis exercitationem aspernatur illo, ratione perferendis officiis. At.</p>
+    <p>Try to open this website on different devices to compare how it will work.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Flexible image">
+    </picture>
+    <h1>Reproucing audios using HTML5</h1> 
+        <picture>
+            <source media="(max-width:750px)" srcset="imagens/on200px.jpg" type="image/jpeg">
+            <source media="(max-width:1050px)" srcset="imagens/on500px.jpg" type="image/jpeg">
+            <img src="imagens/on1000px.jpg" alt="on1000px">
+        </picture>
+        <audio src="midia/Cartoon - 01 - On On.mp3" controls autoplay loop></audio>
+    <h2>Inserting videos hosted locally</h2>
+    <p>This video is saved in a local server.</p>
+        <video src="videos/videohd.mp4" width="700" poster="imagens/on500px.jpg" controls></video>
+        <video>
+            <source src="videos/videohd.mp4" type="midia/mp4">
+            <source src="videos/videosuperfullhd.mp4" type="midia/mp4">
+        </video>
+    <h2>Using external sources like youtube, making it cheaper for our client</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+</body>
+</html>
