@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root{
+    --cor1:#84E1AD;
+    --cor2:#3CD983;
+    --shadow:rgba(0, 0, 0, 0.295);
+
+    --fonte-padrão: 'EB Garamond', serif;
+    --fonte-títulos: 'Passion One', cursive;
+    --fonte-conteudo: 'Sriracha', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: auto;
+    min-width: 320px;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-family: var(--fonte-títulos);
+    margin: 0;
+    letter-spacing: 0.02em;
+    padding-top: 50px;
+    font-size: 10vw;
+}
+
+header > p{
+    color: white;
+    margin: 0.5em;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-bottom: 50px;
+    letter-spacing: 00.1em;
+    font-size: 1.4vw;
+}
+
+header > p > strong >a{
+    text-decoration: none;
+    color: white;
+}
+
+article{
+    margin: auto;
+    font-family: var(--fonte-conteudo);
+    font-size: 2.5vw;
+}
+
+article > div > p{
+    padding-left: 60px;
+}
+
+.estrofe1{
+    padding: 120px 0px 120px 0px;
+}
+
+.estrofe2{
+    padding: 120px 0px 120px 60px; /* 60px repeats itself bacause of div inside div*/
+    color: white;
+    margin: 0;
+    background: url(imagens/background001.jpg) no-repeat fixed center center;
+    background-size: cover;
+    box-shadow:inset 0px 0px 8px 8px var(--shadow);
+}
+
+.transparencia > p{
+    background-color: var(--shadow);
+    padding-right: 20px;
+}
+
+.estrofe4{
+    padding: 120px 0px 120px 60px; /* 60px repeats itself bacause of div inside div*/
+    color: white;
+    margin: 0;
+    background: url(imagens/background002.jpg) no-repeat fixed center center;
+    background-size: cover;
+    box-shadow:inset 0px 0px 8px 8px var(--shadow);
+}
+
+.transparencia4 > p{
+    background-color: var(--shadow);
+}
+
+footer{
+    margin: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+}
+
+footer > p{
+    margin: 0;
+    font-size: 1.5vw;
+}
+
+footer p > strong > a{
+    text-decoration: none;
+    color: white;
+}
